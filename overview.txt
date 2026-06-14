@@ -1,0 +1,62 @@
+PROJECT OVERVIEW – NOVAPLAY (ONLINE GAMING WEBSITE)
+=====================================================
+
+Project Name
+------------
+NovaPlay
+
+Category
+--------
+Web Development – Online Gaming Website
+
+Purpose
+-------
+NovaPlay is an online gaming portal that allows visitors to browse and play
+browser-based games across multiple genres, track their performance on
+leaderboards, earn achievements, and compete in scheduled tournaments. The
+platform combines a Miniclip-style game library with lightweight social and
+competitive features to keep players engaged beyond a single play session.
+
+Target Audience
+----------------
+- Casual gamers (ages 13-45) looking for quick, free, browser-playable games
+- Competitive players who want to track rank, scores, and tournament standings
+- Tournament organizers and site admins managing the game catalog and events
+
+Goals
+-----
+1. Provide a fast, responsive game library with genre browsing and search
+2. Allow players to save favorite games and track their play history
+3. Offer global and per-game leaderboards updated in near real time
+4. Run scheduled tournaments with registration, brackets, and prize pools
+5. Give admins simple tools to manage games, tournaments, and leaderboard data
+
+Key Features
+------------
+- Home page with featured games carousel and genre filter chips
+- Embedded sandboxed game player with fullscreen support
+- Global and per-game leaderboards with daily/weekly/all-time filters
+- Tournament pages with registration, countdown timers, and bracket view
+- Player dashboard with saved games, achievements, and tournament standings
+- Admin panel for managing game listings, tournaments, and leaderboard entries
+
+Brand Identity
+---------------
+Energetic, arcade-modern dark theme with neon purple (Neon, #7C3AED) and
+cyan (Pulse, #22D3EE) accents. Headlines use Space Grotesk, UI text uses
+Inter, and scores/stats use JetBrains Mono for a competitive, data-driven feel.
+
+Technical Approach
+-------------------
+Built with Next.js (App Router), Tailwind CSS, Zustand for state management,
+and Motion for animation. Game data, leaderboards, tournaments, and player
+fixtures are stored as per-entity JSON modules under /data to simulate a
+live backend. Games run inside sandboxed iframes with postMessage-based
+score reporting.
+
+Project Scope Reference
+------------------------
+Full design and technical specifications are documented in prd.md.
+Detailed task boundaries are documented in scope_of_work.txt.
+Evaluation criteria for related agent tasks are documented in
+rubric_novaplay_audit.json and rubrics.txt.

@@ -1,0 +1,105 @@
+SCOPE OF WORK – NOVAPLAY (ONLINE GAMING WEBSITE)
+==================================================
+
+1. PROJECT SUMMARY
+-------------------
+This scope of work defines the deliverables, boundaries, and exclusions for
+the design and front-end development of NovaPlay, an online gaming portal
+featuring a browsable game library, leaderboards, tournaments, and a player
+dashboard, as detailed in prd.md.
+
+2. IN-SCOPE DELIVERABLES
+--------------------------
+
+2.1 Documentation
+- overview.txt – project summary, goals, and brand identity
+- scope_of_work.txt – this document
+- prd.md – full product requirements document (visual direction, tech stack,
+  page specifications, view models, UI flows)
+- assets.pdf – list and description of required design/media assets
+- reference_image.png – visual reference for the site's look and feel
+- instructions.md – build instructions for the website
+- rubrics.txt / rubric_novaplay_audit.json – evaluation rubrics for the
+  deliverables and related agent tasks
+
+2.2 Pages & Templates (Front End)
+- Home (`/`) – hero banner, featured games carousel, genre filter chips,
+  infinite scroll game grid
+- Game Detail / Player (`/game/[slug]`) – embedded sandboxed game player,
+  controls panel, related games, favorite/save toggle
+- Genre / Category Page (`/category/[slug]`) – filtered and sorted game grid
+- Search (`/search`) – instant keyword, genre, and rating filters
+- Leaderboards (`/leaderboards`) – global and per-game tables with time-range
+  filters
+- Tournaments (`/tournaments/[slug]`) – registration, bracket view, prize
+  pool and deadline display, countdown timer
+- Dashboard (`/dashboard`) – saved games, achievements, tournament standings
+- Login (`/login`) – email/password fields, account creation
+- Admin Manage (`/admin/games`) – game listing table, tournament scheduler,
+  leaderboard moderation
+
+2.3 Core Functionality
+- Genre filtering, search, and sorting across the game library
+- Sandboxed iframe game player with fullscreen toggle and score reporting
+  via postMessage
+- Favorite/save game functionality for logged-in players
+- Global and per-game leaderboard display with daily/weekly/all-time filters
+- Tournament registration flow with confirmation toast
+- Player dashboard showing saved games, achievements, and standings
+- Mock authentication (localStorage-based) with role switching (Visitor,
+  Player, Admin)
+- Admin tools for managing games, tournaments, and leaderboard entries
+
+2.4 Design System
+- Color system, typography (Space Grotesk, Inter, JetBrains Mono), and 12-
+  column layout grid as defined in prd.md
+- Responsive breakpoints for desktop, tablet, and mobile
+- Motion language: transitions, hover states, and reduced-motion handling
+
+2.5 Data & Fixtures
+- Per-entity JSON fixture modules under /data for Game, Genre, Player,
+  ScoreEntry, Tournament, Achievement, SavedGame, and Plan
+- Simulated polling for leaderboard updates, notifications, and "players
+  online now" counters
+
+3. OUT-OF-SCOPE
+-----------------
+- Real backend services, databases, or third-party API integrations
+- Real payment processing (checkout/billing UI is mock only, no live
+  transactions)
+- Native mobile applications (iOS/Android)
+- Multiplayer real-time networking or matchmaking infrastructure
+- User-generated content moderation systems beyond the basic admin
+  leaderboard moderation log
+- Localization / multi-language support
+- Legal page content (Terms, Privacy Policy, Cookie Policy) beyond
+  placeholder links
+
+4. ASSUMPTIONS
+---------------
+- All game content is represented via fixture data and embed placeholders;
+  no licensed third-party games are integrated
+- Authentication is simulated via localStorage for demonstration purposes
+  only and is not production-secure
+- Tournament brackets and leaderboard rankings are pre-seeded fixture data,
+  not derived from live competitive play
+
+5. SUBMISSION REQUIREMENTS
+----------------------------
+- All files listed in Section 2.1 must be placed inside a single folder
+  named in first_last format
+- Folder must be uploaded to a public GitHub repository
+- File names and formats must exactly match the required conventions
+  (assets.pdf as PDF, reference_image.png as PNG, instructions.md as
+  Markdown)
+- Repository link must be submitted via the provided submission form
+
+6. ACCEPTANCE CRITERIA
+------------------------
+- All required documentation files are present, complete, and internally
+  consistent with prd.md
+- All in-scope pages and core functionality described in Section 2 are
+  implemented and responsive
+- Design system (colors, typography, layout, motion) matches prd.md
+- Rubrics accurately reflect the evaluation criteria for the deliverables
+- Repository is public and accessible
